@@ -34,7 +34,7 @@ I am going to describe how I usually run the code:
   
   - 11th: 170-180 lines --> RandomForest model with metrics calculation like: R-Squared, Mean Squared Error, Mean Absolute Error. Model saved in 'car_prices_rndm_frst_model.sav' file.
   
-  - 12th: 183-213 lines --> Artificial Neural Network - architecture: 4 deep layer with 30 neurons each layer, add dropout between each layer (0.3), ReLU activation function for deep layers and Linear activation function for output layer. Optimizer 'Adam', Loss function 'mse', metrics 'mae'. Batch size = 1024 and number of epochs = 50. As the high accuracy of model was not the main goal, I end up with combination of paramaters like this. Model saved to 'car_prices_model.h5' file. Metrics calculation like in DecisionTree model and RandomForest model was also made.
+  - 12th: 183-213 lines --> Artificial Neural Network - architecture: 4 deep layer with 30 neurons each layer, add dropout between each layer (0.4), ReLU activation function for deep layers and Linear activation function for output layer. Optimizer 'Adam', Loss function 'mse', metrics 'mae'. Batch size = 1024 and number of epochs = 50. As the high accuracy of model was not the main goal, I end up with combination of paramaters like this. Model saved to 'car_prices_model.h5' file. Metrics calculation like in DecisionTree model and RandomForest model was also made.
   
   - 13th: 216-222 lines --> Visualization of change mae value during the training process.
   
