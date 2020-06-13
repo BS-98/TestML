@@ -44,6 +44,7 @@ I am going to describe how I usually run the code:
   
 ## Skyphrases.py 
  Just run the script.
+ Answer: 410
  
 ## Checkerboard.py
 Just run the script.
