@@ -26,19 +26,19 @@ I am going to describe how I usually run the code:
   
   - 7th: 133 line --> Make dummy variables from categorical data in dataset.
   
-  - 8th: 135-144 lines --> Split the dataset into training set and test set. Test set = 15%.
+  - 8th: 135-144 lines --> Split the dataset into training set and test set. Test set = 10%.
   
   - 9th: 147-154 lines --> Scale data
   
-  - 10th: 158-166 lines --> DecisionTree model with metrics calculation like: R-Squared, Mean Squared Error, Mean Absolute Error
+  - 10th: 158-168 lines --> DecisionTree model with metrics calculation like: R-Squared, Mean Squared Error, Mean Absolute Error. Model saved in 'car_prices_dectree_model.sav' file.
   
-  - 11th: 169-177 lines --> RandomForest model with metrics calculation like: R-Squared, Mean Squared Error, Mean Absolute Error
+  - 11th: 170-180 lines --> RandomForest model with metrics calculation like: R-Squared, Mean Squared Error, Mean Absolute Error. Model saved in 'car_prices_rndm_frst_model.sav' file.
   
-  - 12th: 181-211 lines --> Artificial Neural Network - architecture: 4 deep layer with 30 neurons each layer, add dropout between each layer (0.3), ReLU activation function for deep layers and Linear activation function for output layer. Optimizer 'Adam', Loss function 'mse', metrics 'mae'. Batch size = 1024 and number of epochs = 50. As the high accuracy of model was not the main goal, I end up with combination of paramaters like this. Model saved to 'car_prices_model.h5' file. Metrics calculation like in DecisionTree model and RandomForest model was also made.
+  - 12th: 183-213 lines --> Artificial Neural Network - architecture: 4 deep layer with 30 neurons each layer, add dropout between each layer (0.3), ReLU activation function for deep layers and Linear activation function for output layer. Optimizer 'Adam', Loss function 'mse', metrics 'mae'. Batch size = 1024 and number of epochs = 50. As the high accuracy of model was not the main goal, I end up with combination of paramaters like this. Model saved to 'car_prices_model.h5' file. Metrics calculation like in DecisionTree model and RandomForest model was also made.
   
-  - 13th: 214-220 lines --> Visualization of change mae value during the training process.
+  - 13th: 216-222 lines --> Visualization of change mae value during the training process.
   
-  - 14th: 223-229 lines --> Visualization of change loss value during the training process.
+  - 14th: 225-231 lines --> Visualization of change loss value during the training process.
   
   
   
